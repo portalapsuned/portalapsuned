@@ -1,0 +1,211 @@
+<app-navigation-menu-experiencias> </app-navigation-menu-experiencias>
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/home']">
+          <i class="fa fa-home"> Home </i>
+        </a>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/experiencias']">
+            Experiencias APS
+          </a>
+        </li>
+        <li>Modificar</li>
+    </ul>
+  </div>
+  <div class="container-center col-md-10">
+
+    <!-- TITULO -->
+    <h2>Modificar: {{updateExp.nombre}}</h2>
+    <form [formGroup]="myForm" novalidate (ngSubmit)="update(myForm)">
+
+      <!--------------------------------  CAMPOS ------------------------------------------>
+
+      <!-- NOMBRE -->
+      <div class="form-group">
+        <label class="required negrita">Nombre del proyecto</label>
+        <div class="alert alert-danger" *ngIf="!myForm.controls.nombre.valid && myForm.controls.nombre.touched">Este campo es obligatorio</div>
+        <input type="text" [(ngModel)]="updateExp.nombre" formControlName="nombre" placeholder="Introduce aquí el nombre del proyecto"
+          class="form-control">
+      </div>
+
+      <!-- COORDINADORES(ARRAY) -->
+      <div formArrayName="coordinadores">
+        <div *ngFor="let coordinador of myForm.controls.coordinadores.controls; let i=index">
+          <div>
+            <label class="negrita">Coordinador (#{{i + 1}})</label>
+            <span class="fa fa-remove pull-right" *ngIf="myForm.controls.coordinadores.controls.length > 1" (click)="removeCoordinador(i, myForm.controls.coordinadores.controls[i].controls.email)"></span>
+          </div>
+          <div class="form-group row" [formGroupName]="i">
+            <div class="col-md-1"></div>
+            <!--NOMBRE-->
+            <div class="col-md-5">
+              <label class="required">Nombre</label>
+              <div class="alert alert-danger" *ngIf="!myForm.controls.coordinadores.controls[i].controls.nombre.valid && myForm.controls.coordinadores.controls[i].controls.nombre.touched">Este campo es obligatorio</div>
+              <input type="text" [(ngModel)]="updateExp.coordinadores[i].nombre" class="form-control" formControlName="nombre" placeholder="Nombre del coordinador">
+            </div>
+            <!--EMAIL-->
+            <div class="col-md-6">
+              <label class="required">Email</label>
+              <div class="alert alert-danger" *ngIf="!myForm.controls.coordinadores.controls[i].controls.email.valid && myForm.controls.coordinadores.controls[i].controls.email.touched">Este campo es obligatorio</div>
+              <input type="email" [(ngModel)]="updateExp.coordinadores[i].email" class="form-control" formControlName="email" placeholder="Dirección de Email">
+            </div>
+          </div>
+        </div>
+        <div class="row tab">
+          <div class="col-md-1"></div>
+          <button type="button" class="button btn-form mt0" (click)="addCoordinador()">
+            <i class="fa fa-plus"></i> Añadir otro coordinador
+          </button>
+        </div>
+      </div>
+      <!-- DESTINATARIO -->
+      <div class="form-group">
+        <label class="required negrita">Destinatario del proyecto</label>
+        <div class="alert alert-danger" *ngIf="!myForm.controls['destinatario'].valid && myForm.controls['destinatario'].touched">Este campo es obligatorio</div>
+        <input class="form-control" type="text" [(ngModel)]="updateExp.destinatario" formControlName="destinatario" placeholder="Destinatario del proyecto">
+      </div>
+
+      <!-- DESCRIPCION -->
+      <div class="form-group">
+        <label class="required negrita">Descripción</label>
+        <!-- <div class="alert alert-danger" *ngIf="!myForm.controls['descripcion'].valid && myForm.controls['descripcion'].touched">Este campo es obligatorio</div> -->
+        <textarea rows="5" cols="50" formControlName="descripcion" [(ngModel)]="updateExp.descripcion" placeholder="Descripción del proyecto"
+          class="form-control"></textarea>
+      </div>
+
+      <!-- AMBITO -->
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="required negrita">Ambito</label>
+          <select class="form-control minimal" formControlName="ambito" [(ngModel)]="updateExpAmbito" (change)="onChangeAmbito($event.target.value) ">
+            <option *ngFor="let ambito of ambitos" [ngValue]="ambito">
+              {{ ambito.nombre }}
+            </option>
+          </select>
+        </div>
+        <!-- ESPECIALIDAD -->
+        <div class="form-group col-md-6">
+          <label class="required negrita">Especialidad</label>
+          <select class="form-control minimal" formControlName="especialidad" [(ngModel)]="updateExpEspecialidad">
+            <option *ngFor="let especialidad of especialidades" [ngValue]="especialidad">
+              {{ especialidad.nombre }}
+            </option>
+          </select>
+
+
+          <!-- <label class="required negrita">Especialidad</label> -->
+          <!-- <div class="alert alert-danger" *ngIf="!myForm.controls['descripcion'].valid && myForm.controls['descripcion'].touched">Este campo es obligatorio</div> -->
+          <!-- <input type="text" formControlName="especialidad" placeholder="Especialidad (p. ej.: 'Grado en Ingeniería Informática')"
+            class="form-control"> -->
+        </div>
+      </div>
+      <div class="row">
+        <!-- UNIVERSIDAD -->
+        <div class="form-group col-md-8">
+          <label class="negrita">Universidad</label>
+          <select class="form-control minimal" formControlName="universidad" [(ngModel)]="updateExpUniversidad">
+            <option *ngFor="let universidad of universidades" [ngValue]="universidad">
+              {{ universidad.nombre }}
+            </option>
+          </select>
+        </div>
+        <!-- FECHA -->
+
+        <div class="form-group col-md-4">
+          <label class="required negrita">Fecha</label>
+          <div class="input-group">
+            <input formControlName="fecha" [(ngModel)]="model" class="form-control" placeholder="dd-mm-yyyy" name="dp" ngbDatepicker
+              #d="ngbDatepicker">
+            <button class="input-group-addon" (click)="d.toggle()" type="button">
+              <i class="fa fa-calendar" style="width: 1.2rem; height: 1rem; cursor: pointer;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <label class="required negrita">Imagenes adjuntas</label>
+      <div *ngFor="let image of adjuntos; let i=index">
+        <span class="fa fa-remove pull-right" (click)="removeAdjunto(i, image.nombre_fichero)"></span>
+        <img src="/assets/uploads/{{image.nombre_fichero}}" width="500" height="400" class="d-inline-block align-top" alt="" />
+        <p></p>
+      </div>
+
+      <div class="form-group">
+        <label class="negrita" for="single">Archivo adjunto</label>
+        <input type="file" class="form-control" name="single" ng2FileSelect [uploader]="uploader" />
+      </div>
+      <div *ngIf="uploader.queue!=''">
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="50%">Nombre</th>
+              <th>Tamaño</th>
+              <th>Progreso</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of uploader.queue">
+              <td>
+                <strong>{{ item.file.name }}</strong>
+              </td>
+              <td nowrap>{{ item.file.size/1024/1024 | number:'.2' }} MB</td>
+              <td>
+                <div class="progress" style="margin-bottom: 0;">
+                  <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.progress + '%' }"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <span *ngIf="item.isSuccess">
+                  <i class="fa fa-check" style="color:green"></i>
+                </span>
+                <span *ngIf="item.isCancel">
+                  <i class="fa fa-circle" style="color:orange"></i>
+                </span>
+                <span *ngIf="item.isError">
+                  <i class="fa fa-cancel" style="color:red"></i>
+                </span>
+              </td>
+              <td nowrap>
+                <button type="button" class="btn btn-success btn-xs" (click)="subir(item)" [disabled]="item.isReady || item.isUploading || item.isSuccess">
+                  <span class="fa fa-upload"></span> Subir
+                </button>
+                <button type="button" class="btn btn-warning btn-xs" (click)="item.cancel()" [disabled]="!item.isUploading">
+                  <span class="fa fa-ban"></span> Cancelar
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" (click)="eliminar(item)">
+                  <span class="fa fa-trash"></span> Borrar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- BOTONES -->
+      <div class="row">
+        <div class="col-md-6">
+          <button type="submit" class="button submit" [disabled]="!myForm.valid">
+            <i class="fa fa-check"></i> Aceptar cambios
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="button cancel" (click)=goback();>
+            <i class="fa fa-times"></i> Cancelar
+          </button>
+        </div>
+        <div class="alert alert-danger" *ngIf="message">{{message}}</div>
+      </div>
+
+      <!-- <div class="margin-20" >
+        <div>myForm details:-</div>
+        <pre>Is myForm valid?: <br>{{myForm.valid | json}}</pre>
+        <pre>form value: <br>{{myForm.value | json}}</pre>
+      </div> -->
+    </form>
+
+
+  </div>
+</div>

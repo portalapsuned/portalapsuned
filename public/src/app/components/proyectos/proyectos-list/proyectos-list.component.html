@@ -1,0 +1,69 @@
+<app-navigation-menu-proyectos> </app-navigation-menu-proyectos>
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/home']">
+          <i class="fa fa-home"> Home </i>
+        </a>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/proyectos']">
+            Proyectos ApS
+          </a>
+        </li>
+        <li>Listado</li>
+    </ul>
+  </div>
+
+  <div class="container-experiencias">
+    <h1> {{titulo}}</h1>
+    <div *ngIf="sCriteria != null">
+      <div *ngIf="sCriteria !=''">
+        <p>
+          <span class="negrita">Criterios de búsqueda: </span>{{sCriteria}}</p>
+      </div>
+    </div>
+    <div *ngIf="proyectos != null">
+      <div *ngIf="proyectos.length > 0">
+
+        <div class="proyecto-detalle" *ngFor="let proyecto of proyectos | paginate :{itemsPerPage: 3, currentPage: p}; let i = index">
+          <h2>{{proyecto.nombre}}</h2>
+          <h5>Estado: </h5>
+          <h4>{{proyecto.estado.nombre}}</h4>
+          <h5>Entidad demandante: </h5>
+          <h4>{{proyecto.entidad.nombre}} - {{proyecto.entidad.provincia_nombre}}</h4>
+          <div *ngIf="proyecto.universidad != null">
+            <h5>Universidad: </h5>
+            <h4>{{proyecto.universidad}}</h4>
+          </div>
+          <br>
+
+          <span title="Ampliar detalle" class="fa fa-file-text pointer icon-blue" (click)="showDetail(proyecto.id)"> Ver detalle...</span>
+
+          <br>
+        </div>
+
+        <pagination-controls (pageChange)="p = $event" previousLabel="Anterior" nextLabel="Siguiente" screenReaderPaginationLabel="Paginación "
+          screenReaderPageLabel="página" screenReaderCurrentLabel="estás en la página" autoHide="true"></pagination-controls>
+
+      </div>
+      <div *ngIf="proyectos.length == 0">
+        <h3>NO HAY NINGUN PROYECTO</h3>
+      </div>
+    </div>
+    <div *ngIf="proyectos == null">
+      <h3>NO HAY NINGUN PROYECTO</h3>
+    </div>
+    <br>
+
+    <!-- BOTONES -->
+    <div class="row">
+      <div class="col-md-6">
+        <button type="button" class="button cancel" (click)=goback();>
+          <i class="fa fa-times"></i> Volver atrás
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>

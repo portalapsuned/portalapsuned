@@ -1,0 +1,69 @@
+<h2>Listado de grados universitarios</h2>
+<br>
+<div class="row">
+  <div class="col-md-7">
+    <input type="text" [(ngModel)]="query" name="query" placeholder="Filtrar resultados por el nombre del grado">
+  </div>
+</div>
+
+<div class="row">
+  <p class="col-md-7 negrita">Nombre del grado
+    <span class="fa fa-arrow-circle-o-down pointer" [style.color]="nombreAsc ? 'green' : 'black'" (click)="orderBy('nombre', 1)"></span>
+    <span class="fa fa-arrow-circle-o-up  pointer " [style.color]="nombreDesc ? 'green' : 'black'" (click)="orderBy('nombre', 0)"></span>
+  </p>
+  <p class="col-md-4 negrita">Ámbito de conocimiento
+    <span class="fa fa-arrow-circle-o-down pointer " [style.color]="nombreAmbitoAsc ? 'green' : 'black'" (click)="orderBy('ambito_nombre', 1)"></span>
+    <span class="fa fa-arrow-circle-o-up pointer " [style.color]="nombreAmbitoDesc ? 'green' : 'black'" (click)="orderBy('ambito_nombre', 0)"></span>
+  </p>
+</div>
+<div *ngFor="let especialidad of especialidades | orderBy: sortingField:ascending | search: 'nombre':query |paginate :{itemsPerPage: 15, currentPage: p}; let i=index">
+
+  <div class="row" *ngIf="!especialidad.editable">
+    <p class="col-md-7">{{especialidad.nombre}} </p>
+    <p class="col-md-4">{{especialidad.ambito_nombre}}
+      <span class="fa fa-close pull-right pointer color-blue " (click)="delete(especialidad)"></span>
+      <span class="fa fa-edit pull-right pointer color-blue" (click)="changeEditMode(especialidad)"></span>
+    </p>
+  </div>
+  <app-especialidades-edit *ngIf="especialidad.editable" [especialidad]="especialidad" (updated)="updateList($event)">
+  </app-especialidades-edit>
+</div>
+
+<!-- BOTONES -->
+<div class="row tab" *ngIf="!addMode">
+  <button type="button" class="button btn-form mt0" (click)="changeAddMode()">
+    <i class="fa fa-plus"></i> Añadir
+  </button>
+</div>
+<br>
+<app-especialidades-add *ngIf="addMode" (added)="addModeEvent($event)">
+  <br>
+</app-especialidades-add>
+<br>
+
+<br>
+<pagination-controls (pageChange)="p = $event" previousLabel="Anterior" nextLabel="Siguiente" screenReaderPaginationLabel="Paginación "
+  screenReaderPageLabel="página" screenReaderCurrentLabel="estás en la página"></pagination-controls>
+<br>
+
+<!-- ************************************************************************** -->
+<!-- MODAL -->
+<!-- ************************************************************************** -->
+
+<bs-modal  [animation]="animation" [keyboard]="keyboard" [backdrop]="backdrop" (onClose)="modalDeleteClosed()" (onDismiss)="modalDeleteDismissed()"
+  (onOpen)="modalDeleteOpened()" #modal>
+  <bs-modal-header>
+    <h4 class="modal-title">APS Virtual</h4>
+  </bs-modal-header>
+  <bs-modal-body>
+    <p>¿Borrar especialidad? Si acepta esta acción no podrá revertirla</p>
+  </bs-modal-body>
+  <bs-modal-footer>
+    <button type="button" class="button expanded submit" (click)="modalDelete.close()">
+      <i class="fa fa-check"></i> ok
+    </button>
+    <button type="button" data-dismiss="modal" class="button expanded cancel" (click)="modalDelete.dismiss()">
+      <i class="fa fa-times"></i> Cancelar
+    </button>
+  </bs-modal-footer>
+</bs-modal>

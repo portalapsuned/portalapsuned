@@ -1,0 +1,22 @@
+<app-navigation-menu-experiencias> </app-navigation-menu-experiencias>
+<div class="container">
+  <div class="row">
+    <ul class="breadcrumb">
+      <li routerLinkActive="active">
+        <a [routerLink]="['/home']">
+          <i class="fa fa-home"> Home </i>
+        </a>
+        <li routerLinkActive="active">
+            <a [routerLink]="['/experiencias']">
+            Experiencias ApS
+          </a>
+        </li>
+        <li>Ramas de conocimiento</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <app-ambitos-list></app-ambitos-list>
+  </div>  
+
+</div>  
