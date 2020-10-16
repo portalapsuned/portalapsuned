@@ -1,0 +1,56 @@
+
+Home Carousel Photos
+<span>Photo by <a href="https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jess Bailey</a> on <a href="https://unsplash.com/s/photos/school?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Photo by <a href="https://unsplash.com/@maltewingen?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Malte Wingen</a> on <a href="https://unsplash.com/s/photos/university?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Photo by <a href="https://unsplash.com/@caleb_woods?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Caleb Woods</a> on <a href="https://unsplash.com/s/photos/university?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Photo by <a href="https://unsplash.com/@henry_be?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Henry Be</a> on <a href="https://unsplash.com/s/photos/university?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Photo by <a href="https://unsplash.com/@cvonraesfeld?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christine von Raesfeld</a> on <a href="https://unsplash.com/s/photos/university?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+
+Default avatar:
+https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png
+
+Default img iniciativa:
+<span>Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+Other imgs iniciativa:
+<span>Photo by <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@frankvex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Frank Vessia</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@boab?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mark Fletcher-Brown</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@jamesponddotco?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">James Pond</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@mbaumi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mika Baumeister</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@krisroller?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kristopher Roller</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@joannakosinska?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joanna Kosinska</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@pavement_special?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Riccardo Annandale</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@codytdavis?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">davisco</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@kaleidico?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kaleidico</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jess Bailey</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@grakozy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Greg Rakozy</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jon Tyson</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@helloimnik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hello I'm Nik 🎞</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@dsmacinnes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Danielle MacInnes</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@frostroomhead?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rodion Kutsaev</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@edulauton?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Edu Lauton</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@mwilner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Martin Wilner</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@clarktibbs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clark Tibbs</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@kaleidico?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kaleidico</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@sloppyperfectionist?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hans-Peter Gauster</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@alexiby?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alex Iby</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@cristian1?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristian Escobar</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@iamkendall?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kendall Ruth</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@kellitungay?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelli Tungay</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@jesuskiteque?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jesus Kiteque</a> on <a href="https://unsplash.com/s/photos/idea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+
+
+
+Random avatars:
+https://getavataaars.com
